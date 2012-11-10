@@ -22,10 +22,6 @@
 		</div>
 	</article>
 
-	<footer>
-		<a href="{{ SITEURL }}/" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;Back to blog</a>
-	</footer>
-
 	{% if DISQUS_SITENAME %}
 	<div id="comments">
 		<h2>Comments</h2>
@@ -41,5 +37,9 @@
 		<noscript>Please enable JavaScript to view <a href="http://disqus.com/?ref_noscript">comments</a>.</noscript>
 	</div>
 	{% endif %}
+
+	<footer>
+		<a href="{{ SITEURL }}/" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;Back to blog</a>
+	</footer>
 
 {% endblock %}
