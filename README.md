@@ -1,34 +1,12 @@
-# SVBTLE
+# SVBTLE tweaked
 
-Svbtle theme is a close copy of [Svbtle.com](http://www.svbtle.com) with
-a few minor changes for use with [Pelican](http://pelican.notmyidea.org).
+This theme is a copy of a copy and is based on [Svbtle.com](http://www.svbtle.com).
 
-## DEMO
+Originally ported to [Pelican](http://pelican.notmyidea.org) by [William Ting](https://github.com/wting/) - download the [repository](https://github.com/wting/pelican-svbtle) or read the original [README file](https://github.com/wting/pelican-svbtle#readme).
 
-You can see the [theme in
-action](http://williamting.com/drafts/this-is-a-theme-testing-post.html), or
-the site code [here](https://github.com/wting/williamting.com).
+Then [responsive adaptations](https://github.com/CNBorn/pelican-svbtle/tree/responsive) were made by [Tyler Xing](https://github.com/CNBorn).
 
-![theme screenshot](https://raw.github.com/wting/pelican-svbtle/master/screenshot.png)
-
-## FEATURES
-
-- syntax highlighting for code blocks
-- Google Analytics
-- Disqus commenting
-- custom list of links
-- support for this LaTeX [plugin][latex]
-
-## KNOWN ISSUES
-
-- no IE testing
-- no custom menu
-- header date format is hardcoded in `./templates/header.html` with the
-  exception of articles.
-- Svbtle uses Freight-Sans-Pro for article titles and Proxima Nova for body.
-  While they are great fonts, neither are free. I've linked to them in case
-  the client has them installed, but most users will browse the site with Open
-  Sans.
+I merged the responsive branch into master and made some small changes of my own.
 
 ## INSTALL
 
@@ -40,8 +18,7 @@ to point to the downloaded theme location.
 
 ### FROM OFFICIAL REPO
 
-Please refer to Pelican theme [install
-instructions](http://pelican.notmyidea.org/en/latest/pelican-themes.html).
+Please refer to Pelican theme [install instructions](http://pelican.notmyidea.org/en/latest/pelican-themes.html).
 
 ## SETTINGS.PY
 
@@ -54,23 +31,15 @@ These are the Pelican global variables currently supported by the theme:
 - `FEED_DOMAIN = SITEURL`
 - `AUTHOR_BIO`, providing a short bio that appears on the side bar.
 
-When developing locally, set the following variable:
-
-`SITEURL = http://localhost:8000`
-
-If you want to enable LaTeX support, additional settings must be
-[configured][latex].
-
 ## MODIFICATION
 
 - Accent color can be changed by editing `@accent` in `./static/css/style.less`.
 
-- A different Pygmentize theme can be used by editing `./Makefile` and
-  running `make pygments`.
+- A different Pygmentize theme can be used by editing `./Makefile` and running `make pygments`.
 
-## AUTHOR
+## AUTHORS
 
-William Ting
+William Ting, Tyler Xing, James Cooke
 
 ## LICENSE
 
