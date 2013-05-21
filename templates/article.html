@@ -12,6 +12,8 @@
 
                 <div class="abbr published" title='{{ article.date.isoformat() }}'>Posted {{ article.locale_date }}</div>
 
+                {% include 'addthis.html' %} 
+
                 <div id="article_meta">
                         {% if not article.category == 'posts' %}
                                 Category:
