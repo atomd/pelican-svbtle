@@ -7,8 +7,7 @@
             </h1>
             <div class="article-content"> {{ article.content }} </div>
             <div class="abbr published">
-                Posted {% if not article.category == 'posts' %}
-                in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>,{% endif %} on <a href='{{ SITEURL }}/{{ article.url }}' title='{{ article.date.isoformat() }}'>{{ article.locale_date }}</a></div>
+                Posted  <a href='{{ SITEURL }}/{{ article.url }}' title='{{ article.date.isoformat() }}'>{{ article.locale_date }}</a>{% if not article.category == 'posts' %} in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>{% endif %}.              
             </div>
         </article>
     {% endfor %}
