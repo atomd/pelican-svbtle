@@ -3,13 +3,13 @@
 @white:         #ffffff;
 @light-grey:    #eeeeee;
 @med-grey:      #999999;
-@dark-grey:     #4d4d4d;
+@dark-grey:     #424242;
 @blue:          #0e94ec;
 
 @accent:        @blue;
 
 @normal_text_size:     1em;
-@normal_text_line-height: 150%;
+@normal_text_line-height: 180%;
 
 @button_link_border: 0.15em;
 @button_link_size: 1em;
@@ -20,7 +20,7 @@ html {
         min-height: 100%;
         margin: 0;
         padding: 0;
-        font-size: 100%;
+        font-size: 1em;
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
         overflow-y: scroll;
@@ -32,12 +32,20 @@ body {
         background-color: @white;
         color: @dark-grey;
         font-family: 'Proxima Nova', 'Open Sans', sans-serif;
-        font-size: 1.125em;
+        font-size: 1em;
         line-height: 100%;
         -webkit-font-smoothing: subpixel-antialiased;
 }
 
-img { max-width: 100%; }
+
+table {
+        border-collapse: collapse;
+        border-spacing: 0;
+}
+
+th {
+        text-align: inherit;
+}
 
 a {
         color: @black;
@@ -119,9 +127,7 @@ a {
 }
 
 .article-content {
-        p, ul, ol {
-                width: 70%;
-        }
+        padding-right:25%;
 }
 
 section#navbar {
@@ -354,7 +360,7 @@ section#posts {
                 list-style-position: outside;
 
                 li {
-                        margin: 0 0 15px 15px;
+                        margin: 0 0 0 15px;
                         padding: 3px 0 3px 5px;
                 }
 
@@ -389,7 +395,7 @@ section#posts {
                 padding: 0 0 0 20px;
                 display: inline-block;
                 border-left: 10px solid @accent;
-                width: 70%;
+                width: 95%;
 
                 color: @black;
                 background-color: @light-grey;
@@ -521,5 +527,23 @@ section#posts {
                         }
                 }
 
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+        }
+
+        table th {
+            font-weight: 400;
+            font-style: normal;
+            background: #fbfbfb;
+        }
+
+        table thead th {
+            background: #f1f1f1;
+        }
+
+        img {
+                max-width: 80%; 
+        }
 
 }
